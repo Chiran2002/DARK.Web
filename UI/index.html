@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE DARK | Heavyweight Streetwear & Custom T-Shirt Studio</title>
+  <meta name="description" content="Engineered heavyweight organic cotton t-shirts, oversized boxy silhouettes, limited drops, and interactive live custom studio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="marquee-track">
+      <span class="marquee-item">⚡ DROP 01 ARCHIVE IS LIVE</span>
+      <span class="marquee-sep">•</span>
+      <span class="marquee-item">FREE WORLDWIDE EXPRESS SHIPPING ON ORDERS OVER $100</span>
+      <span class="marquee-sep">•</span>
+      <span class="marquee-item">USE CODE <strong class="glow-text">DARK20</strong> FOR 20% OFF</span>
+      <span class="marquee-sep">•</span>
+      <span class="marquee-item">CUSTOM DESIGN STUDIO NOW OPEN</span>
+      <span class="marquee-sep">•</span>
+      <span class="marquee-item">240-280 GSM COMBED ORGANIC COTTON</span>
+      <span class="marquee-sep">•</span>
+      <span class="marquee-item">⚡ DROP 01 ARCHIVE IS LIVE</span>
+      <span class="marquee-sep">•</span>
+      <span class="marquee-item">FREE WORLDWIDE EXPRESS SHIPPING ON ORDERS OVER $100</span>
+      <span class="marquee-sep">•</span>
+      <span class="marquee-item">USE CODE <strong class="glow-text">DARK20</strong> FOR 20% OFF</span>
+    </div>
+  </div>
+
+  <!-- Global Header / Navbar -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+
+      <a href="#" class="brand-logo" id="brandLogo">
+        <span class="logo-mark">▲</span>
+        <div class="logo-text">
+          <span class="brand-name">THE DARK</span>
+          <span class="brand-sub">STUDIO // 01</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#catalogSection" class="nav-link">Collection</a>
+        <a href="#customStudioSection" class="nav-link highlight-link">
+          <span class="pulse-dot"></span> Custom Studio
+        </a>
+        <a href="#lookbookSection" class="nav-link">Lookbook</a>
+        <a href="#craftSection" class="nav-link">Our Craft</a>
+        <a href="#reviewsSection" class="nav-link">Reviews</a>
+        <a href="#faqSection" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        
+        <button class="icon-btn account-trigger-btn" id="accountDrawerTrigger" aria-label="Account Menu" title="Account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </button>
+        <button class="icon-btn search-toggle-btn" id="searchToggleBtn" aria-label="Search items" title="Search catalog">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+
+        <button class="icon-btn wishlist-btn" id="wishlistTrigger" aria-label="Wishlist" title="View Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span class="badge-counter" id="wishlistBadge">0</span>
+        </button>
+
+        <button class="cart-trigger-btn" id="cartTrigger" aria-label="Shopping Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="cart-btn-text">Bag</span>
+          <span class="cart-count-badge" id="cartCountBadge">0</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Collapsible Search Bar Header Dropdown -->
+    <div class="search-drawer" id="searchDrawer">
+      <div class="search-drawer-inner">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="headerSearchInput" placeholder="Search by name, fabric, style (e.g. vintage, cyber, heavyweight)..." autocomplete="off">
+        <button class="search-clear-btn" id="clearSearchBtn" aria-label="Clear search">✕</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="heroSection">
+      <div class="hero-bg-glow"></div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-indicator"></span>
+            <span>AUTUMN / WINTER 2026 // BATCH 04</span>
+          </div>
+          <h1 class="hero-title">
+            REDEFINING THE <br>
+            <span class="gradient-text">OVERSIZED</span> <br>
+            SILHOUETTE.
+          </h1>
+          <p class="hero-description">
+            Engineered with 240-280 GSM combed organic cotton. Built with architectural drop-shoulders, high-density collar ribbing, and zero-shrinkage finishing. Explore ready-to-wear drops or design your custom silhouette in real-time.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#catalogSection" class="btn btn-primary" id="exploreCollectionBtn">
+              <span>Explore Collection</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#customStudioSection" class="btn btn-secondary" id="openCustomStudioBtn">
+              <span class="studio-sparkle">✦</span>
+              <span>Launch Studio</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">240+</span>
+              <span class="stat-label">GSM Heavyweight</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Organic Cotton</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">4.9★</span>
+              <span class="stat-label">Verified Fit</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-wrapper">
+            <div class="hero-image-card">
+              <img src="assets/hero_model.jpg" alt="THE DARK Streetwear Oversized Graphic T-Shirt" class="hero-img">
+              <div class="hero-overlay-tag top-left">
+                <span class="tag-meta">ITEM // 001</span>
+                <span class="tag-title">NEO-CYBERNETIC TEE</span>
+              </div>
+              <div class="hero-overlay-tag bottom-right">
+                <span class="tag-price">$68.00</span>
+                <button class="quick-add-tag-btn" onclick="addToCart(1)" title="Instant Add to Bag">
+                  + Add to Bag
+                </button>
+              </div>
+            </div>
+
+            <!-- Floating feature badges -->
+            <div class="floating-badge badge-1">
+              <div class="badge-icon">✓</div>
+              <div class="badge-text">
+                <strong>Pre-Shrunk</strong>
+                <span>Preserves Boxy Fit</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-2">
+              <div class="badge-icon">✦</div>
+              <div class="badge-text">
+                <strong>2.5cm Thick Collar</strong>
+                <span>Never Sags</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Pillars / Trust Bar -->
+    <section class="trust-bar" id="craftSection">
+      <div class="trust-container">
+        <div class="trust-card">
+          <div class="trust-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+          </div>
+          <div class="trust-info">
+            <h4>240-280 GSM Density</h4>
+            <p>Substantial weight that drapes effortlessly without clinging.</p>
+          </div>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+          </div>
+          <div class="trust-info">
+            <h4>Double-Needle Ribbing</h4>
+            <p>High-tension neckbands guaranteed to hold form after 100+ washes.</p>
+          </div>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+          </div>
+          <div class="trust-info">
+            <h4>Express Worldwide</h4>
+            <p>Carbon-neutral dispatch within 24 hours. Free on orders over $100.</p>
+          </div>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+          </div>
+          <div class="trust-info">
+            <h4>Perfect Fit Guarantee</h4>
+            <p>Free 30-day size and silhouette exchanges without questions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Catalog Section -->
+    <section class="catalog-section" id="catalogSection">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="sub-badge">SEASONAL CATALOG</span>
+            <h2 class="section-title">THE CURATED COLLECTION</h2>
+          </div>
+          
+          <div class="catalog-controls">
+            <!-- Filter Pills -->
+            <div class="filter-pills" id="categoryFilterContainer">
+              <button class="filter-pill active" data-category="all">All Silhouettes</button>
+              <button class="filter-pill" data-category="graphic">Graphic Drops</button>
+              <button class="filter-pill" data-category="vintage">Acid Washed</button>
+              <button class="filter-pill" data-category="minimal">Minimalist Blank</button>
+              <button class="filter-pill" data-category="heavy">Heavy French Terry</button>
+            </div>
+
+            <!-- Sort dropdown -->
+            <div class="sort-wrapper">
+              <label for="sortSelect" class="sr-only">Sort Products</label>
+              <select id="sortSelect" class="sort-select">
+                <option value="featured">Sort: Featured</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="rating">Highest Rated</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Grid Container -->
+        <div class="product-grid" id="productGrid">
+          <!-- Populated dynamically by app.js -->
+        </div>
+
+        <!-- Empty state message if search finds nothing -->
+        <div class="empty-state hidden" id="catalogEmptyState">
+          <div class="empty-icon">🔍</div>
+          <h3>No matching silhouettes found</h3>
+          <p>Try searching for "black", "vintage", "graphic", or reset your filters.</p>
+          <button class="btn btn-secondary" id="resetFiltersBtn">Reset All Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive T-Shirt Custom Studio ("The Studio") -->
+    <section class="custom-studio-section" id="customStudioSection">
+      <div class="section-container">
+        <div class="studio-header">
+          <div class="studio-tag">
+            <span class="sparkle">✦</span>
+            <span>INTERACTIVE WORKSHOP</span>
+          </div>
+          <h2 class="section-title">THE DARK // CUSTOM LAB</h2>
+          <p class="studio-subtitle">
+            Engineer your custom oversized tee. Select fabric weight, custom dye shades, graphic placements, or input your own signature typographic statement.
+          </p>
+        </div>
+
+        <div class="studio-workspace">
+          <!-- Left: Live Interactive T-Shirt Visualizer -->
+          <div class="visualizer-container">
+            <div class="visualizer-canvas-card">
+              <div class="visualizer-header-bar">
+                <span class="view-indicator" id="viewModeLabel">FRONT PERSPECTIVE</span>
+                <div class="perspective-toggle">
+                  <button class="view-btn active" id="viewFrontBtn">Front View</button>
+                  <button class="view-btn" id="viewBackBtn">Back View</button>
+                </div>
+              </div>
+
+              <!-- T-Shirt Interactive SVG / Canvas Display -->
+              <div class="tee-stage-wrapper" id="teeStageWrapper">
+                <div class="tee-mockup-frame" id="teeMockupFrame">
+                  <!-- SVG T-Shirt Base with dynamic fills, shading & displacement -->
+                  <svg id="tshirtSvg" viewBox="0 0 500 520" class="tshirt-svg" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <filter id="fabricTexture" x="0%" y="0%" width="100%" height="100%">
+                        <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.12 0" />
+                        <feComposite in2="SourceGraphic" in="gl" operator="in" />
+                      </filter>
+                      <linearGradient id="teeShading" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12" />
+                        <stop offset="45%" stop-color="#000000" stop-opacity="0.0" />
+                        <stop offset="100%" stop-color="#000000" stop-opacity="0.38" />
+                      </linearGradient>
+                      <linearGradient id="sleeveShadowL" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#000000" stop-opacity="0.45" />
+                        <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+                      </linearGradient>
+                      <linearGradient id="sleeveShadowR" x1="100%" y1="0%" x2="0%" y2="0%">
+                        <stop offset="0%" stop-color="#000000" stop-opacity="0.45" />
+                        <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+                      </linearGradient>
+                    </defs>
+
+                    <!-- Base Shirt Body Silhouette (Oversized Boxy Streetwear Cut) -->
+                    <path id="shirtBody" class="shirt-body-path" d="
+                      M 160 70
+                      C 180 95, 320 95, 340 70
+                      L 460 145
+                      C 475 175, 460 220, 420 245
+                      L 380 205
+                      L 385 470
+                      C 385 482, 375 490, 360 490
+                      L 140 490
+                      C 125 490, 115 482, 115 470
+                      L 120 205
+                      L 80 245
+                      C 40 220, 25 175, 40 145
+                      Z" 
+                      fill="#121216" stroke="#2a2a35" stroke-width="2" />
+
+                    <!-- Sleeve Fold & Seam details -->
+                    <path d="M 120 205 L 140 125" stroke="#000000" stroke-width="2.5" stroke-opacity="0.35" fill="none"/>
+                    <path d="M 380 205 L 360 125" stroke="#000000" stroke-width="2.5" stroke-opacity="0.35" fill="none"/>
+                    
+                    <!-- Collar Thick Ribbing -->
+                    <path id="collarRib" d="
+                      M 160 70
+                      C 190 102, 310 102, 340 70
+                      C 325 50, 175 50, 160 70
+                      Z" 
+                      fill="#1a1a22" stroke="#333344" stroke-width="2.5" />
+                    
+                    <!-- Inside Back Neck Tape -->
+                    <path id="innerNeck" d="M 175 62 C 220 78, 280 78, 325 62 C 300 48, 200 48, 175 62 Z" fill="#08080a" opacity="0.6"/>
+
+                    <!-- Shading overlay -->
+                    <path d="
+                      M 160 70
+                      C 180 95, 320 95, 340 70
+                      L 460 145
+                      C 475 175, 460 220, 420 245
+                      L 380 205
+                      L 385 470
+                      C 385 482, 375 490, 360 490
+                      L 140 490
+                      C 125 490, 115 482, 115 470
+                      L 120 205
+                      L 80 245
+                      C 40 220, 25 175, 40 145
+                      Z" 
+                      fill="url(#teeShading)" pointer-events="none" />
+
+                    <!-- Left Sleeve inner shadow -->
+                    <path d="M 40 145 L 120 205 L 80 245 Z" fill="url(#sleeveShadowL)" pointer-events="none"/>
+                    <!-- Right Sleeve inner shadow -->
+                    <path d="M 460 145 L 380 205 L 420 245 Z" fill="url(#sleeveShadowR)" pointer-events="none"/>
+                  </svg>
+
+                  <!-- Dynamic Artwork / Text Printable Area Layer -->
+                  <div class="tee-print-zone" id="teePrintZone">
+                    <div class="graphic-layer" id="graphicLayer">
+                      <!-- Selected Graphic SVG / Canvas inserted here -->
+                    </div>
+                    <div class="custom-text-layer" id="customTextLayer">
+                      THE DARK
+                    </div>
+                  </div>
+
+                  <div class="interactive-drag-hint">
+                    <span>✦ Live Interactive Preview</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Color Palette bar below preview -->
+              <div class="visualizer-color-quickbar">
+                <span class="color-selected-name" id="colorSelectedName">Color: Onyx Black</span>
+                <div class="fabric-badge" id="previewGsmBadge">240 GSM Heavyweight</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Customizer Controls Panel -->
+          <div class="customizer-controls-panel">
+            <div class="control-card">
+              <!-- Step 1: Base Color -->
+              <div class="control-group">
+                <div class="control-title-row">
+                  <span class="step-num">01</span>
+                  <label class="control-label">FABRIC SHADE</label>
+                  <span class="active-val" id="colorValLabel">Onyx Black</span>
+                </div>
+                <div class="swatch-grid" id="studioColorSwatches">
+                  <button class="swatch-btn active" data-color="#121217" data-name="Onyx Black" style="--c: #121217" title="Onyx Black"></button>
+                  <button class="swatch-btn" data-color="#26262e" data-name="Washed Charcoal" style="--c: #26262e" title="Washed Charcoal"></button>
+                  <button class="swatch-btn" data-color="#e3dfd7" data-name="Vintage Chalk" style="--c: #e3dfd7" title="Vintage Chalk"></button>
+                  <button class="swatch-btn" data-color="#3c2152" data-name="Cyber Violet" style="--c: #3c2152" title="Cyber Violet"></button>
+                  <button class="swatch-btn" data-color="#354034" data-name="Forest Moss" style="--c: #354034" title="Forest Moss"></button>
+                  <button class="swatch-btn" data-color="#541b21" data-name="Blood Crimson" style="--c: #541b21" title="Blood Crimson"></button>
+                  <button class="swatch-btn" data-color="#9a866b" data-name="Dune Sand" style="--c: #9a866b" title="Dune Sand"></button>
+                </div>
+              </div>
+
+              <!-- Step 2: Fabric GSM & Silhouette -->
+              <div class="control-group">
+                <div class="control-title-row">
+                  <span class="step-num">02</span>
+                  <label class="control-label">FABRIC DENSITY (GSM)</label>
+                </div>
+                <div class="gsm-selector-grid">
+                  <button class="gsm-card-btn" data-gsm="180" data-price="48" data-desc="Soft Combed Everyday">
+                    <span class="gsm-val">180 GSM</span>
+                    <span class="gsm-name">Everyday Supima</span>
+                    <span class="gsm-price">$48</span>
+                  </button>
+                  <button class="gsm-card-btn active" data-gsm="240" data-price="62" data-desc="Signature Oversized Boxy">
+                    <span class="badge-tag">POPULAR</span>
+                    <span class="gsm-val">240 GSM</span>
+                    <span class="gsm-name">Heavy Boxy Cotton</span>
+                    <span class="gsm-price">$62</span>
+                  </button>
+                  <button class="gsm-card-btn" data-gsm="280" data-price="78" data-desc="Ultra Luxury French Terry">
+                    <span class="gsm-val">280 GSM</span>
+                    <span class="gsm-name">Brutalist Terry</span>
+                    <span class="gsm-price">$78</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Step 3: Artwork Graphic Preset -->
+              <div class="control-group">
+                <div class="control-title-row">
+                  <span class="step-num">03</span>
+                  <label class="control-label">PRINT ARTWORK</label>
+                  <span class="active-val" id="presetValLabel">Neo Cyber Skull</span>
+                </div>
+                <div class="artwork-preset-grid" id="artworkPresetGrid">
+                  <button class="artwork-btn active" data-preset="skull" title="Neo Cyber Skull">
+                    <span class="art-icon">💀</span>
+                    <span class="art-name">Cyber Skull</span>
+                  </button>
+                  <button class="artwork-btn" data-preset="japanese" title="Tokyo Cybermatics">
+                    <span class="art-icon">ネオ</span>
+                    <span class="art-name">Tokyo Grid</span>
+                  </button>
+                  <button class="artwork-btn" data-preset="geometry" title="Chrome Geometry">
+                    <span class="art-icon">✦</span>
+                    <span class="art-name">Chrome Core</span>
+                  </button>
+                  <button class="artwork-btn" data-preset="minimal" title="Brutalist Logo">
+                    <span class="art-icon">▲</span>
+                    <span class="art-name">Atelier Mark</span>
+                  </button>
+                  <button class="artwork-btn" data-preset="none" title="Clean Minimal (Blank)">
+                    <span class="art-icon">✕</span>
+                    <span class="art-name">Blank / None</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Step 4: Custom Typographic Statement -->
+              <div class="control-group">
+                <div class="control-title-row">
+                  <span class="step-num">04</span>
+                  <label class="control-label">CUSTOM TEXT STATEMENT</label>
+                </div>
+                <div class="custom-text-inputs">
+                  <div class="input-with-counter">
+                    <input type="text" id="studioCustomTextInput" maxlength="24" value="THE DARK" placeholder="Enter text (e.g. TOKYO // 2026)...">
+                    <span class="char-count" id="textCharCount">8/24</span>
+                  </div>
+                  
+                  <div class="text-styling-options">
+                    <div class="font-picker">
+                      <select id="studioFontSelect" class="styled-select" aria-label="Typography Font">
+                        <option value="'Syne', sans-serif">Font: Syne Heavy</option>
+                        <option value="'Space Grotesk', monospace">Font: Space Grotesk</option>
+                        <option value="'Plus Jakarta Sans', sans-serif">Font: Modern Sans</option>
+                      </select>
+                    </div>
+
+                    <div class="print-color-picker">
+                      <label class="print-color-label">Ink:</label>
+                      <button class="ink-btn active" data-ink="#ffffff" style="background:#ffffff;" title="Chalk White"></button>
+                      <button class="ink-btn" data-ink="#06b6d4" style="background:#06b6d4;" title="Neon Cyan"></button>
+                      <button class="ink-btn" data-ink="#a855f7" style="background:#a855f7;" title="Cyber Purple"></button>
+                      <button class="ink-btn" data-ink="#22c55e" style="background:#22c55e;" title="Acid Green"></button>
+                      <button class="ink-btn" data-ink="#f43f5e" style="background:#f43f5e;" title="Crimson Red"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 5: Size Selection -->
+              <div class="control-group">
+                <div class="control-title-row">
+                  <span class="step-num">05</span>
+                  <label class="control-label">SELECT SILHOUETTE SIZE</label>
+                  <a href="#sizeGuideModal" class="size-guide-link" id="openSizeGuideLink">Size Guide</a>
+                </div>
+                <div class="studio-sizes" id="studioSizes">
+                  <button class="size-btn" data-size="S">S</button>
+                  <button class="size-btn" data-size="M">M</button>
+                  <button class="size-btn active" data-size="L">L (Boxy)</button>
+                  <button class="size-btn" data-size="XL">XL</button>
+                  <button class="size-btn" data-size="XXL">XXL</button>
+                </div>
+              </div>
+
+              <!-- Studio Summary & Add to Cart -->
+              <div class="studio-checkout-bar">
+                <div class="studio-price-breakdown">
+                  <span class="breakdown-label">Custom Engineered Total</span>
+                  <div class="price-wrap">
+                    <span class="computed-price" id="studioTotalPrice">62.00</span>
+                  </div>
+                </div>
+
+                <button class="btn btn-primary studio-add-btn" id="studioAddToCartBtn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  <span>Add Custom Tee to Bag</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Lookbook Section -->
+    <section class="lookbook-section" id="lookbookSection">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="sub-badge">STREETWEAR EDITORIAL</span>
+            <h2 class="section-title">THE LOOKBOOK // ARCHIVE 01</h2>
+          </div>
+          <p class="section-subtitle">
+            Captured on location in Tokyo and Berlin underground districts.
+          </p>
+        </div>
+
+        <div class="lookbook-hero-grid">
+          <div class="lookbook-main-card">
+            <img src="assets/lookbook_1.jpg" alt="THE DARK Tokyo Lookbook Editorial" class="lookbook-img">
+            
+            <!-- Interactive hotspot pin 1 -->
+            <div class="hotspot-pin" style="top: 42%; left: 32%;" data-product-id="1">
+              <span class="pin-pulse"></span>
+              <span class="pin-dot">+</span>
+              <div class="hotspot-popover">
+                <strong>Aether Acid Tee</strong>
+                <span>240 GSM Washed • $68</span>
+                <button onclick="openQuickView(2)">View Item</button>
+              </div>
+            </div>
+
+            <!-- Interactive hotspot pin 2 -->
+            <div class="hotspot-pin" style="top: 45%; left: 74%;" data-product-id="2">
+              <span class="pin-pulse"></span>
+              <span class="pin-dot">+</span>
+              <div class="hotspot-popover">
+                <strong>Urban Decay 2026</strong>
+                <span>Distressed Charcoal • $65</span>
+                <button onclick="openQuickView(3)">View Item</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="lookbook-sidebar">
+            <div class="quote-card">
+              <span class="quote-icon">“</span>
+              <p class="quote-text">
+                "We reject fast fashion flimsiness. Every shirt we drop is cut with intentional weight, architectural stiffness, and brutalist integrity that outlasts micro-trends."
+              </p>
+              <div class="quote-author">
+                <strong>KAI CHEN</strong>
+                <span>Head of Atelier Design // Berlin</span>
+              </div>
+            </div>
+
+            <div class="lookbook-stats-grid">
+              <div class="lb-stat-box">
+                <span class="stat-highlight">2.8x</span>
+                <span class="stat-caption">Average garment lifespan vs industry standard</span>
+              </div>
+              <div class="lb-stat-box">
+                <span class="stat-highlight">100%</span>
+                <span class="stat-caption">Low-impact certified non-toxic reactive dyes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Customer Reviews Section -->
+    <section class="reviews-section" id="reviewsSection">
+      <div class="section-container">
+        <div class="reviews-header-block">
+          <div>
+            <span class="sub-badge">VERIFIED COLLECTORS</span>
+            <h2 class="section-title">COMMUNITY REVIEWS</h2>
+            <div class="overall-rating-row">
+              <div class="stars">★★★★★</div>
+              <span class="rating-num">4.9 / 5.0</span>
+              <span class="review-count">(Based on 942 verified orders)</span>
+            </div>
+          </div>
+
+          <button class="btn btn-secondary" id="openReviewModalBtn">
+            <span>Write a Review</span>
+          </button>
+        </div>
+
+        <div class="reviews-grid" id="reviewsGrid">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faqSection">
+      <div class="section-container faq-container">
+        <div class="faq-header text-center">
+          <span class="sub-badge">SPECIFICATIONS & QUESTIONS</span>
+          <h2 class="section-title">FREQUENTLY ASKED</h2>
+        </div>
+
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>What makes a 240-280 GSM T-shirt superior to ordinary tees?</span>
+              <span class="acc-chevron">+</span>
+            </button>
+            <div class="accordion-content">
+              <p>Standard mall t-shirts typically weigh 130–160 GSM, resulting in clinging, sheer transparency, and bacon collars after a few washes. Our 240 GSM and 280 GSM heavyweight cotton provides structural drape, stays opaque, keeps its clean boxy line, and uses heavy double-stitched collar ribbing that will never stretch or curl.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>How should I wash and care for my heavyweight garments?</span>
+              <span class="acc-chevron">+</span>
+            </button>
+            <div class="accordion-content">
+              <p>Because our fabric is pre-washed and sanforized against shrinkage, maintenance is simple: Machine wash cold (30°C / 85°F) inside-out with like colors. Hang dry or tumble dry low. Do not iron directly over silicone or screen-printed graphics.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>How does sizing work for the oversized boxy fit?</span>
+              <span class="acc-chevron">+</span>
+            </button>
+            <div class="accordion-content">
+              <p>Our tees are intentionally designed with an oversized, drop-shoulder silhouette. We recommend ordering your true standard size for that relaxed streetwear look. If you desire a traditional fitted silhouette, size down one size.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>How long does shipping take and what are the rates?</span>
+              <span class="acc-chevron">+</span>
+            </button>
+            <div class="accordion-content">
+              <p>Domestic express shipping takes 2-3 business days. International express takes 4-7 business days with end-to-end tracking. All orders over $100 receive automatic Free Worldwide Express Shipping.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIP Inner Circle Newsletter -->
+    <section class="newsletter-section">
+      <div class="section-container newsletter-box">
+        <div class="newsletter-content">
+          <span class="badge-tag">MEMBER ACCESS ONLY</span>
+          <h2>JOIN THE INNER ARCHIVE</h2>
+          <p>Get instant 20-minute early access to numbered drops, private sample sales, and 15% off your first checkout.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email address..." required>
+            <button type="submit" class="btn btn-primary">
+              <span>Claim Access</span>
+            </button>
+          </form>
+          <span class="newsletter-disclaimer">Zero spam. Encrypted. Unsubscribe at any second.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="section-container footer-grid">
+      <div class="footer-col brand-col">
+        <a href="#" class="brand-logo">
+          <span class="logo-mark">▲</span>
+          <div class="logo-text">
+            <span class="brand-name">THE DARK</span>
+            <span class="brand-sub">TOKYO // BERLIN // NYC</span>
+          </div>
+        </a>
+        <p class="footer-bio">
+          Independent brutalist apparel house. Dedicated to heavyweight material honesty, structural silhouettes, and bespoke street culture.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Instagram">IG</a>
+          <a href="#" class="social-btn" aria-label="Twitter">X</a>
+          <a href="#" class="social-btn" aria-label="TikTok">TT</a>
+          <a href="#" class="social-btn" aria-label="Discord">DC</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">COLLECTIONS</h4>
+        <ul class="footer-list">
+          <li><a href="#catalogSection">All Heavyweight Drops</a></li>
+          <li><a href="#catalogSection">Acid & Vintage Washed</a></li>
+          <li><a href="#catalogSection">Graphic Series 01</a></li>
+          <li><a href="#catalogSection">Blank Essentials</a></li>
+          <li><a href="#customStudioSection">Interactive Custom Lab</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">ATELIER HELP</h4>
+        <ul class="footer-list">
+          <li><a href="#" id="footerSizeGuide">Size & Fit Architecture</a></li>
+          <li><a href="#faqSection">Care Guide & Longevity</a></li>
+          <li><a href="#faqSection">Worldwide Express Shipping</a></li>
+          <li><a href="#faqSection">30-Day Free Returns</a></li>
+          <li><a href="#">Order Tracking System</a></li>
+          <li><a href="../Admin/index.html" style="color:var(--accent-purple);font-weight:700;">⚡ Atelier Command [Admin]</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">STORE REGION</h4>
+        <div class="currency-selector-box">
+          <label for="currencySelect" class="region-label">Currency & Region:</label>
+          <select id="currencySelect" class="styled-select currency-select">
+            <option value="LKR" selected>LKR (Rs) — Sri Lanka</option>
+            <option value="USD">USD ($) — United States</option>
+            <option value="EUR">EUR (€) — European Union</option>
+            <option value="GBP">GBP (£) — United Kingdom</option>
+            <option value="JPY">JPY (¥) — Japan</option>
+            <option value="AUD">AUD ($) — Australia</option>
+          </select>
+        </div>
+        <div class="payment-badges">
+          <span class="pay-chip">VISA</span>
+          <span class="pay-chip">MC</span>
+          <span class="pay-chip">AMEX</span>
+          <span class="pay-chip">APPLE PAY</span>
+          <span class="pay-chip">UPI</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="section-container footer-bottom-inner">
+        <span>© 2026 THE DARK APPAREL CO. ALL RIGHTS RESERVED.</span>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sustainability Report</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODALS & DRAWERS ================= -->
+
+  <!-- Slide-out Shopping Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart">
+    <div class="cart-drawer-header">
+      <div class="cart-title-row">
+        <h3>YOUR CART</h3>
+        <span class="cart-items-counter" id="cartDrawerCount">(0 items)</span>
+      </div>
+      <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close cart">✕</button>
+    </div>
+
+    <!-- Free Shipping Progress Tracker -->
+    <div class="shipping-meter-wrap">
+      <div class="shipping-meter-text" id="shippingMeterText">
+        Add <strong id="shippingMeterRemaining">$100.00</strong> more for Free Worldwide Express Shipping!
+      </div>
+      <div class="shipping-meter-bar">
+        <div class="shipping-meter-fill" id="shippingMeterFill" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items Scrollable Container -->
+    <div class="cart-items-list" id="cartItemsList">
+      <!-- Injected dynamically by app.js -->
+    </div>
+
+    <!-- Cart Footer with Promo and Totals -->
+    <div class="cart-drawer-footer">
+      <div class="promo-code-box">
+        <input type="text" id="promoCodeInput" placeholder="Promo code (try DARK20)" autocomplete="off">
+        <button class="btn btn-secondary promo-apply-btn" id="promoApplyBtn">Apply</button>
+      </div>
+      <div class="promo-feedback-msg" id="promoFeedbackMsg"></div>
+
+      <div class="cart-calculations">
+        <div class="calc-row">
+          <span>Subtotal</span>
+          <span id="cartSubtotalVal">$0.00</span>
+        </div>
+        <div class="calc-row discount-row hidden" id="cartDiscountRow">
+          <span>Discount Applied</span>
+          <span id="cartDiscountVal">-$0.00</span>
+        </div>
+        <div class="calc-row">
+          <span>Worldwide Shipping</span>
+          <span id="cartShippingVal">Calculated next</span>
+        </div>
+        <div class="calc-row total-row">
+          <span>Estimated Total</span>
+          <span class="grand-total" id="cartGrandTotalVal">$0.00</span>
+        </div>
+      </div>
+
+      <button class="btn btn-primary checkout-btn" id="checkoutBtn">
+        <span>Proceed to Secure Checkout</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </button>
+
+      <div class="secure-checkout-guarantee">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        <span>256-Bit SSL Encrypted Checkout</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Quick View Product Modal -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal-dialog quickview-dialog">
+      <button class="modal-close-btn" id="quickViewCloseBtn" aria-label="Close modal">✕</button>
+      
+      <div class="quickview-body" id="quickViewContent">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Size Guide Modal -->
+  <div class="modal-overlay" id="sizeGuideModal">
+    <div class="modal-dialog size-guide-dialog">
+      <button class="modal-close-btn" id="sizeGuideCloseBtn" aria-label="Close modal">✕</button>
+      <div class="modal-header">
+        <span class="sub-badge">MEASUREMENTS IN CM & INCHES</span>
+        <h3>ARCHITECTURAL BOX-FIT SIZE GUIDE</h3>
+        <p>Engineered with relaxed drop shoulders, wide chest box cut, and ribbed high collar.</p>
+      </div>
+      <div class="size-guide-table-wrap">
+        <table class="size-table">
+          <thead>
+            <tr>
+              <th>Size</th>
+              <th>Chest Width (cm / in)</th>
+              <th>Body Length (cm / in)</th>
+              <th>Shoulder Drop (cm / in)</th>
+              <th>Recommended Height</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>S</strong></td>
+              <td>112 cm / 44"</td>
+              <td>72 cm / 28.3"</td>
+              <td>54 cm / 21.2"</td>
+              <td>165 - 173 cm</td>
+            </tr>
+            <tr>
+              <td><strong>M</strong></td>
+              <td>118 cm / 46.5"</td>
+              <td>74 cm / 29.1"</td>
+              <td>56 cm / 22.0"</td>
+              <td>172 - 180 cm</td>
+            </tr>
+            <tr>
+              <td><strong>L (Signature)</strong></td>
+              <td>124 cm / 48.8"</td>
+              <td>76 cm / 30.0"</td>
+              <td>58 cm / 22.8"</td>
+              <td>178 - 186 cm</td>
+            </tr>
+            <tr>
+              <td><strong>XL</strong></td>
+              <td>130 cm / 51.2"</td>
+              <td>78 cm / 30.7"</td>
+              <td>60 cm / 23.6"</td>
+              <td>184 - 192 cm</td>
+            </tr>
+            <tr>
+              <td><strong>XXL</strong></td>
+              <td>136 cm / 53.5"</td>
+              <td>80 cm / 31.5"</td>
+              <td>62 cm / 24.4"</td>
+              <td>190+ cm</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="size-fit-tip">
+        💡 <strong>Fit Tip:</strong> Our silhouettes run intentionally oversized. Choose your regular size for an authentic streetwear drape, or size down if you prefer a slimmer tailored look.
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Multi-Step Checkout Modal -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal-dialog checkout-dialog">
+      <button class="modal-close-btn" id="checkoutCloseBtn" aria-label="Close modal">✕</button>
+
+      <div class="checkout-stepper">
+        <div class="step-indicator active" data-step="1">1. Shipping</div>
+        <div class="step-connector"></div>
+        <div class="step-indicator" data-step="2">2. Payment</div>
+        <div class="step-connector"></div>
+        <div class="step-indicator" data-step="3">3. Review</div>
+      </div>
+
+      <form id="checkoutForm" class="checkout-form">
+        <!-- Step 1: Shipping Details -->
+        <div class="checkout-step-page active" id="stepShipping">
+          <h4>Shipping Address</h4>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="shipFirstName">First Name</label>
+              <input type="text" id="shipFirstName" required placeholder="Alex">
+            </div>
+            <div class="form-group">
+              <label for="shipLastName">Last Name</label>
+              <input type="text" id="shipLastName" required placeholder="Mercer">
+            </div>
+            <div class="form-group full-width">
+              <label for="shipEmail">Email Address (for order tracking)</label>
+              <input type="email" id="shipEmail" required placeholder="alex@darkatelier.com">
+            </div>
+            <div class="form-group full-width">
+              <label for="shipAddress">Street Address</label>
+              <input type="text" id="shipAddress" required placeholder="742 Evergreen Terrace, Suite 4B">
+            </div>
+            <div class="form-group">
+              <label for="shipCity">City</label>
+              <input type="text" id="shipCity" required placeholder="New York">
+            </div>
+            <div class="form-group">
+              <label for="shipZip">Postal / Zip Code</label>
+              <input type="text" id="shipZip" required placeholder="10001">
+            </div>
+            <div class="form-group full-width">
+              <label for="shipCountry">Country / Region</label>
+              <select id="shipCountry" class="styled-select">
+                <option value="US">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="CA">Canada</option>
+                <option value="DE">Germany</option>
+                <option value="JP">Japan</option>
+                <option value="IN">India</option>
+                <option value="AU">Australia</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="shipping-options-box">
+            <label class="radio-option active">
+              <input type="radio" name="shippingMethod" value="standard" checked>
+              <div class="option-details">
+                <strong>Express Tracked Courier (3-5 Business Days)</strong>
+                <span>Priority global flight dispatch with signature confirmation</span>
+              </div>
+              <span class="option-price" id="checkoutShippingCost">$0.00</span>
+            </label>
+          </div>
+
+          <button type="button" class="btn btn-primary next-step-btn" id="toPaymentBtn">
+            Continue to Payment
+          </button>
+        </div>
+
+        <!-- Step 2: Payment Details -->
+        <div class="checkout-step-page" id="stepPayment">
+          <h4>Payment Method</h4>
+          <div class="payment-tabs">
+            <button type="button" class="pay-tab-btn active" data-tab="card">Credit / Debit Card</button>
+            <button type="button" class="pay-tab-btn" data-tab="apple">Apple Pay / Google Pay</button>
+            <button type="button" class="pay-tab-btn" data-tab="upi">UPI / Instant Pay</button>
+          </div>
+
+          <div class="pay-tab-content active" id="payCardContent">
+            <div class="form-grid">
+              <div class="form-group full-width">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" placeholder="4242 •••• •••• 4242" maxlength="19">
+              </div>
+              <div class="form-group">
+                <label for="cardExpiry">Expiration Date</label>
+                <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5">
+              </div>
+              <div class="form-group">
+                <label for="cardCvc">Security CVC</label>
+                <input type="password" id="cardCvc" placeholder="•••" maxlength="4">
+              </div>
+            </div>
+          </div>
+
+          <div class="pay-tab-content" id="payAppleContent">
+            <div class="apple-pay-mock">
+              <div class="apple-pay-badge"> Pay</div>
+              <p>Biometric authentication will trigger on order placement.</p>
+            </div>
+          </div>
+
+          <div class="pay-tab-content" id="payUpiContent">
+            <div class="form-group full-width">
+              <label for="upiId">Virtual Payment Address (VPA / UPI ID)</label>
+              <input type="text" id="upiId" placeholder="name@okaxis / user@upi">
+            </div>
+          </div>
+
+          <div class="checkout-nav-row">
+            <button type="button" class="btn btn-secondary" id="backToShippingBtn">Back</button>
+            <button type="button" class="btn btn-primary" id="toReviewBtn">Review Order</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Review & Place Order -->
+        <div class="checkout-step-page" id="stepReview">
+          <h4>Review Order & Confirm</h4>
+          <div class="order-summary-box" id="checkoutOrderSummary">
+            <!-- Populated dynamically -->
+          </div>
+
+          <div class="checkout-nav-row">
+            <button type="button" class="btn btn-secondary" id="backToPaymentBtn">Back</button>
+            <button type="submit" class="btn btn-primary place-order-btn" id="placeOrderBtn">
+              <span>Place Order</span>
+              <span id="checkoutFinalAmount">$0.00</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Order Success Confirmation Modal -->
+  <div class="modal-overlay" id="orderSuccessModal">
+    <div class="modal-dialog success-dialog">
+      <div class="confetti-container" id="confettiContainer"></div>
+      <div class="success-icon-wrap">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <span class="sub-badge success-badge">ORDER CONFIRMED</span>
+      <h2>THANK YOU FOR YOUR ORDER.</h2>
+      <p>Your limited edition pieces are being carefully inspected and prepared for shipment.</p>
+      
+      <div class="receipt-card">
+        <div class="receipt-row">
+          <span>Order Number:</span>
+          <strong class="receipt-id" id="confirmedOrderId">#DA-88294</strong>
+        </div>
+        <div class="receipt-row">
+          <span>Estimated Delivery:</span>
+          <strong id="confirmedDeliveryDate">3-5 Business Days</strong>
+        </div>
+        <div class="receipt-row">
+          <span>Confirmation Sent To:</span>
+          <span id="confirmedCustomerEmail">customer@example.com</span>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" id="continueShoppingBtn">Continue Exploring</button>
+    </div>
+  </div>
+
+  <!-- Wishlist Drawer / Modal -->
+  <div class="modal-overlay" id="wishlistModal">
+    <div class="modal-dialog wishlist-dialog">
+      <button class="modal-close-btn" id="wishlistCloseBtn" aria-label="Close modal">✕</button>
+      <div class="modal-header">
+        <span class="sub-badge">CURATED FAVORITES</span>
+        <h3>YOUR SAVED ARCHIVE</h3>
+      </div>
+      <div class="wishlist-items-grid" id="wishlistItemsGrid">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Write a Review Modal -->
+  <div class="modal-overlay" id="reviewModal">
+    <div class="modal-dialog review-dialog">
+      <button class="modal-close-btn" id="reviewModalCloseBtn" aria-label="Close modal">✕</button>
+      <div class="modal-header">
+        <span class="sub-badge">COMMUNITY VOICE</span>
+        <h3>WRITE A VERIFIED REVIEW</h3>
+        <p>Share your experience with fit, fabric drape, and styling.</p>
+      </div>
+      <form id="reviewForm" class="review-form">
+        <div class="form-group">
+          <label>Rating</label>
+          <div class="star-rating-input" id="starRatingInput">
+            <span class="star-pick" data-val="1">★</span>
+            <span class="star-pick" data-val="2">★</span>
+            <span class="star-pick" data-val="3">★</span>
+            <span class="star-pick" data-val="4">★</span>
+            <span class="star-pick active" data-val="5">★</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="reviewAuthor">Your Name</label>
+          <input type="text" id="reviewAuthor" required placeholder="e.g. Jordan V.">
+        </div>
+        <div class="form-group">
+          <label for="reviewTitle">Review Title</label>
+          <input type="text" id="reviewTitle" required placeholder="e.g. The collar quality is insane">
+        </div>
+        <div class="form-group">
+          <label for="reviewComment">Review Comments</label>
+          <textarea id="reviewComment" rows="4" required placeholder="Tell us about the cotton weight, silhouette drape, and wash durability..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Review</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Account Off-Canvas Drawer -->
+  <div class="off-canvas-overlay" id="accountDrawerOverlay"></div>
+  <aside class="off-canvas-drawer account-drawer" id="accountDrawer">
+    <div class="drawer-header">
+      <h2>YOUR ARCHIVE</h2>
+      <button class="drawer-close-btn" id="accountDrawerClose" aria-label="Close drawer">✕</button>
+    </div>
+    
+    <div class="drawer-body" id="accountDrawerBody">
+      <!-- Unauthenticated View -->
+      <div class="account-guest-view" id="accountGuestView">
+        <p>Access your personal collector archive to manage orders, payments, and early drop access.</p>
+        <a href="auth.html" class="btn btn-primary account-action-btn">AUTHENTICATE</a>
+      </div>
+      
+      <!-- Authenticated View -->
+      <div class="account-auth-view" id="accountAuthView" style="display: none;">
+        <div class="account-user-card">
+          <div class="user-avatar" id="drawerUserAvatar">U</div>
+          <div class="user-info">
+            <div class="user-name" id="drawerUserName">USER</div>
+            <div class="user-email" id="drawerUserEmail">user@example.com</div>
+          </div>
+        </div>
+        
+        <nav class="account-nav-list">
+          <a href="#" class="account-nav-item" data-action="details">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            Account Details
+          </a>
+          <a href="#" class="account-nav-item" data-action="history">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            Order History
+          </a>
+          <a href="#" class="account-nav-item" data-action="payment">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+            Payment Methods
+          </a>
+          <a href="#" class="account-nav-item" data-action="security">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            Security / Password
+          </a>
+        </nav>
+        
+        <div class="account-drawer-footer">
+          <button class="btn btn-outline btn-logout" id="accountLogoutBtn">LOG OUT</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Toast Notification System -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

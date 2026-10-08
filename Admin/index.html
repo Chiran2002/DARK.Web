@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE DARK // Command Matrix Console</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+  <div class="admin-layout">
+    <!-- Collapsible Administrative Sidebar -->
+    <aside class="admin-sidebar" id="adminSidebar">
+      <div class="sidebar-brand">
+        <a href="#" class="brand-link">
+          <span class="brand-symbol">▲</span>
+          <div class="brand-titles">
+            <span class="brand-title">THE DARK</span>
+            <span class="brand-sub">COMMAND MATRIX // 01</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-group-label">MAIN CONTROL</div>
+        <button class="nav-item active" data-tab="overview">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          <span>Overview</span>
+        </button>
+        <button class="nav-item" data-tab="orders">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span>Orders</span>
+          <span class="nav-counter" id="ordersNavCounter">0</span>
+        </button>
+        <button class="nav-item" data-tab="inventory">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+          <span>Catalog & Inventory</span>
+        </button>
+        <button class="nav-item" data-tab="studio">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+          <span>Studio Lab Creations</span>
+        </button>
+
+        <div class="nav-group-label">MARKETING & COMMUNITY</div>
+<button class="nav-item" data-tab="customers">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          <span>Customer Accounts</span>
+        </button>
+
+        <button class="nav-item" data-tab="promo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <span>Promo Codes</span>
+        </button>
+        <button class="nav-item" data-tab="reviews">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          <span>Collector Reviews</span>
+        </button>
+        <button class="nav-item" data-tab="subscribers">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span>VIP Subscribers</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="../UI/index.html" class="storefront-link" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          <span>Open Storefront</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="admin-main">
+      <!-- Top Bar -->
+      <header class="admin-topbar">
+        <div class="topbar-left">
+          <button class="sidebar-toggle-btn" id="sidebarToggleBtn" aria-label="Toggle Sidebar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+          <div class="breadcrumb" id="currentTabBreadcrumb">COMMAND // OVERVIEW</div>
+        </div>
+
+        <div class="topbar-right">
+          <!-- Database Sync Status Indicator -->
+          <div class="db-status-badge" id="dbStatusBadge">
+            <span class="status-pulse-dot"></span>
+            <span class="status-text">SQLite DB: Connected (Port 8001)</span>
+          </div>
+
+          <button class="btn btn-secondary quick-sync-btn" id="refreshDataBtn" title="Refresh Live Database Data">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+            <span>Sync</span>
+          </button>
+
+          <div class="admin-profile">
+            <div class="profile-avatar">C</div>
+            <div class="profile-info">
+              <span class="profile-name">Chiran</span>
+              <span class="profile-role">Atelier Admin</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- View Containers (Tab Panels) -->
+      <div class="admin-content-view">
+        
+        <!-- ================= TAB 1: OVERVIEW ================= -->
+        <section class="tab-panel active" id="panel-overview">
+          <div class="view-header">
+            <div>
+              <h1 class="view-title">STORE METRICS & HEALTH</h1>
+              <p class="view-desc">Live financial performance, active drop volumes, and automated stock alerts.</p>
+            </div>
+            <div class="view-actions">
+              <button class="btn btn-primary" onclick="switchAdminTab('inventory');openAddDropModal();">
+                + New Drop Silhouette
+              </button>
+            </div>
+          </div>
+
+          <!-- KPI Metric Cards Grid -->
+          <div class="kpi-grid">
+            <div class="kpi-card">
+              <div class="kpi-meta">
+                <span class="kpi-label">TOTAL REVENUE</span>
+                <span class="kpi-tag positive">+18.4%</span>
+              </div>
+              <div class="kpi-value" id="kpiRevenue">Rs 0.00</div>
+              <div class="kpi-footer">Processed via Stripe & Apple Pay</div>
+            </div>
+
+            <div class="kpi-card">
+              <div class="kpi-meta">
+                <span class="kpi-label">TOTAL ORDERS</span>
+                <span class="kpi-tag" id="kpiProcessingTag">0 Processing</span>
+              </div>
+              <div class="kpi-value" id="kpiTotalOrders">0</div>
+              <div class="kpi-footer"><span id="kpiShippedCount">0</span> orders completed shipment</div>
+            </div>
+
+            <div class="kpi-card">
+              <div class="kpi-meta">
+                <span class="kpi-label">INVENTORY IN-STOCK</span>
+                <span class="kpi-tag positive">Healthy</span>
+              </div>
+              <div class="kpi-value" id="kpiTotalStock">0</div>
+              <div class="kpi-footer">Across <span id="kpiProductCount">0</span> silhouettes & 30 size SKUs</div>
+            </div>
+
+            <div class="kpi-card">
+              <div class="kpi-meta">
+                <span class="kpi-label">DAILY SALES</span>
+                <span class="kpi-tag positive">Today</span>
+              </div>
+              <div class="kpi-value" id="kpiDailySales">Rs 0.00</div>
+              <div class="kpi-footer">Est. Profit: <span id="kpiDailyProfit">Rs 0.00</span></div>
+            </div>
+          </div>
+
+          <!-- Split Grid: Recent Orders & Stock Urgency -->
+          <div class="overview-split-grid">
+            <!-- Recent Orders Feed -->
+            <div class="dashboard-card">
+              <div class="card-header-row">
+                <h3>LATEST STORE ORDERS</h3>
+                <button class="card-action-link" onclick="switchAdminTab('orders')">View All Orders →</button>
+              </div>
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Order #</th>
+                      <th>Customer</th>
+                      <th>Items</th>
+                      <th>Total</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="overviewRecentOrdersTbody">
+                    <!-- Dynamic -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Low Stock Alert Box -->
+            <div class="dashboard-card">
+              <div class="card-header-row">
+                <h3>LOW INVENTORY RADAR</h3>
+                <span class="badge-tag">THRESHOLD &lt; 30 PCS</span>
+              </div>
+              <div class="low-stock-list" id="overviewLowStockList">
+                <!-- Dynamic -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TAB 2: ORDERS ================= -->
+        <section class="tab-panel" id="panel-orders">
+          <div class="view-header">
+            <div>
+              <h1 class="view-title">FULFILLMENT & ORDERS</h1>
+              <p class="view-desc">Monitor transactions, adjust dispatch stages, and inspect custom studio garments.</p>
+            </div>
+          </div>
+
+          <div class="data-toolbar">
+            <div class="filter-pills">
+              <button class="order-filter-pill active" data-filter="all">All Orders</button>
+              <button class="order-filter-pill" data-filter="PROCESSING">Processing</button>
+              <button class="order-filter-pill" data-filter="SHIPPED">Shipped</button>
+              <button class="order-filter-pill" data-filter="DELIVERED">Delivered</button>
+            </div>
+
+            <div class="search-box">
+              <input type="text" id="orderSearchInput" placeholder="Search order number or customer...">
+            </div>
+          </div>
+
+          <div class="dashboard-card">
+            <div class="table-responsive">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Order #</th>
+                    <th>Date</th>
+                    <th>Customer</th>
+                    <th>Shipping Destination</th>
+                    <th>Total</th>
+                    <th>Payment</th>
+                    <th>Fulfillment Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="ordersTableBody">
+                  <!-- Dynamic -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TAB 3: CATALOG & INVENTORY ================= -->
+        <section class="tab-panel" id="panel-inventory">
+          <div class="view-header">
+            <div>
+              <h1 class="view-title">CATALOG SILHOUETTES & INVENTORY</h1>
+              <p class="view-desc">Direct control over sizes (S through XXL), GSM fabric weights, and live drop statuses.</p>
+            </div>
+            <div class="view-actions">
+              <button class="btn btn-primary" onclick="openAddDropModal()">+ Add New Drop</button>
+            </div>
+          </div>
+
+          <div class="dashboard-card">
+            <div class="table-responsive">
+              <table class="data-table inventory-table">
+                <thead>
+                  <tr>
+                    <th>Silhouette</th>
+                    <th>Category</th>
+                    <th>GSM</th>
+                    <th>Base Price</th>
+                    <th>Inventory by Size (S / M / L / XL / XXL)</th>
+                    <th>Total Units</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="inventoryTableBody">
+                  <!-- Dynamic -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TAB 4: STUDIO CREATIONS ================= -->
+        <section class="tab-panel" id="panel-studio">
+          <div class="view-header">
+            <div>
+              <h1 class="view-title">STUDIO LAB CUSTOM CREATIONS</h1>
+              <p class="view-desc">Inspect bespoke oversized garments engineered directly by collectors in the Custom Lab.</p>
+            </div>
+          </div>
+
+          <div class="studio-creations-grid" id="studioCreationsGrid">
+            <!-- Dynamic -->
+          </div>
+        </section>
+
+        <!-- ================= TAB 5: PROMO CODES ================= -->
+        <section class="tab-panel" id="panel-promo">
+          <div class="view-header">
+            <div>
+              <h1 class="view-title">PROMO DISCOUNT ENGINES</h1>
+              <p class="view-desc">Configure percentage and fixed-amount coupon codes with minimum order limits.</p>
+            </div>
+            <div class="view-actions">
+              <button class="btn btn-primary" onclick="openAddPromoModal()">+ Create Promo Code</button>
+            </div>
+          </div>
+
+          <div class="dashboard-card">
+            <div class="table-responsive">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Promo Code</th>
+                    <th>Type</th>
+                    <th>Discount Value</th>
+                    <th>Min Order Requirement</th>
+                    <th>Status</th>
+                    <th>Toggle</th>
+                  </tr>
+                </thead>
+                <tbody id="promoTableBody">
+                  <!-- Dynamic -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TAB 6: REVIEWS ================= -->
+        <section class="tab-panel" id="panel-reviews">
+          <div class="view-header">
+            <div>
+              <h1 class="view-title">COMMUNITY REVIEWS MODERATION</h1>
+              <p class="view-desc">Review customer testimonials, verified ratings, and fit critiques.</p>
+            </div>
+          </div>
+
+          <div class="reviews-moderation-grid" id="adminReviewsGrid">
+            <!-- Dynamic -->
+          </div>
+        </section>
+
+        <!-- ================= TAB 7: SUBSCRIBERS ================= -->
+        <section class="tab-panel" id="panel-subscribers">
+          <div class="view-header">
+            <div>
+              <h1 class="view-title">VIP INNER ARCHIVE LEADS</h1>
+              <p class="view-desc">Customers signed up for 20-minute early drop passwords.</p>
+            </div>
+            <div class="view-actions">
+              <button class="btn btn-secondary" onclick="exportSubscribersCsv()">Export CSV</button>
+            </div>
+          </div>
+
+          <div class="dashboard-card">
+            <div class="table-responsive">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th># ID</th>
+                    <th>Email Address</th>
+                    <th>Acquisition Source</th>
+                    <th>Date Subscribed</th>
+                  </tr>
+                </thead>
+                <tbody id="subscribersTableBody">
+                  <!-- Dynamic -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TAB 8: CUSTOMERS ================= -->
+        <section class="tab-panel" id="panel-customers">
+          <div class="view-header">
+            <div>
+              <h1 class="view-title">IDENTITY DIRECTORY</h1>
+              <p class="view-desc">Monitor and manage registered collector identities and their archive privileges.</p>
+            </div>
+            <div class="view-actions">
+              <button class="btn btn-secondary" onclick="exportIdentities()">Export Directory</button>
+            </div>
+          </div>
+          <div class="dashboard-card">
+            <div class="data-toolbar" style="margin-bottom: 20px; border-bottom: none; padding-bottom: 0;">
+              <div class="search-box" style="width: 100%;">
+                <input type="text" id="identitySearchInput" placeholder="Search by name or email address...">
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Collector Hash ID</th>
+                    <th>Full Identity</th>
+                    <th>Comms (Email)</th>
+                    <th>Access Level</th>
+                    <th>Acquisition Date</th>
+                    <th>Management</th>
+                  </tr>
+                </thead>
+                <tbody id="newCustomersTableBody">
+                  <!-- Freshly injected via JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- ================= MODALS ================= -->
+
+  <!-- Order Inspection Modal -->
+  <div class="admin-modal-overlay" id="orderInspectModal">
+    <div class="admin-modal-dialog">
+      <button class="admin-modal-close" onclick="closeAdminModal('orderInspectModal')">✕</button>
+      <div class="modal-header-block">
+        <span class="sub-badge">ORDER AUDIT</span>
+        <h2 id="inspectOrderNum">#DA-XXXXX</h2>
+        <span class="order-date-label" id="inspectOrderDate">Date</span>
+      </div>
+
+      <div class="order-inspect-details" id="orderInspectDetails">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Add New Drop Modal -->
+  <div class="admin-modal-overlay" id="addDropModal">
+    <div class="admin-modal-dialog">
+      <button class="admin-modal-close" onclick="closeAdminModal('addDropModal')">✕</button>
+      <div class="modal-header-block">
+        <span class="sub-badge">CATALOG EXPANSION</span>
+        <h2>LAUNCH NEW SILHOUETTE DROP</h2>
+        <p>Create a new heavyweight garment entry in the database.</p>
+      </div>
+
+      <form id="newDropForm" class="admin-form">
+        <div class="form-grid">
+          <div class="form-group full-width">
+            <label>Drop Title</label>
+            <input type="text" id="dropTitle" required placeholder="e.g. CYBERNETIC CHROME OVERSIZED TEE">
+          </div>
+          <div class="form-group">
+            <label>Silhouette Category</label>
+            <select id="dropCategory" class="admin-select">
+              <option value="graphic">Graphic Drops</option>
+              <option value="vintage">Acid Washed</option>
+              <option value="minimal">Minimalist Blank</option>
+              <option value="heavy">Heavy French Terry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Price (LKR Rs)</label>
+            <input type="number" id="dropPrice" step="0.5" required value="68.0">
+          </div>
+          <div class="form-group">
+            <label>Fabric Density (GSM)</label>
+            <input type="number" id="dropGsm" required value="240">
+          </div>
+          <div class="form-group">
+            <label>Badge Flag</label>
+            <input type="text" id="dropBadge" value="NEW DROP" placeholder="e.g. LIMITED DROP">
+          </div>
+          <div class="form-group full-width">
+            <label>Image URL / Path</label>
+            <input type="text" id="dropImage" required value="assets/tee_black.jpg">
+          </div>
+          <div class="form-group full-width">
+            <label>Design Narrative & Description</label>
+            <textarea id="dropDesc" rows="3" required placeholder="High-density combed organic cotton..."></textarea>
+          </div>
+        </div>
+
+        <div class="size-stocks-input-row">
+          <label class="section-sub-label">INITIAL STOCK PER SIZE (UNITS)</label>
+          <div class="size-inputs-grid">
+            <div><span>S:</span><input type="number" id="stockS" value="40"></div>
+            <div><span>M:</span><input type="number" id="stockM" value="80"></div>
+            <div><span>L:</span><input type="number" id="stockL" value="120"></div>
+            <div><span>XL:</span><input type="number" id="stockXL" value="60"></div>
+            <div><span>XXL:</span><input type="number" id="stockXXL" value="25"></div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;margin-top:20px;">
+          Deploy Silhouette to Store & Database
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Create Promo Code Modal -->
+  <div class="admin-modal-overlay" id="addPromoModal">
+    <div class="admin-modal-dialog promo-dialog">
+      <button class="admin-modal-close" onclick="closeAdminModal('addPromoModal')">✕</button>
+      <div class="modal-header-block">
+        <span class="sub-badge">DISCOUNT CAMPAIGN</span>
+        <h2>CREATE PROMO CODE</h2>
+      </div>
+
+      <form id="newPromoForm" class="admin-form">
+        <div class="form-group">
+          <label>Coupon Code (e.g. FLASH25)</label>
+          <input type="text" id="promoCodeName" required placeholder="DARK30" style="text-transform:uppercase;">
+        </div>
+        <div class="form-group">
+          <label>Discount Type</label>
+          <select id="promoType" class="admin-select">
+            <option value="percentage">Percentage Off (%)</option>
+            <option value="fixed_amount">Fixed Currency Amount (Rs)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Discount Value</label>
+          <input type="number" id="promoVal" required value="20" step="0.5">
+        </div>
+        <div class="form-group">
+          <label>Minimum Order Threshold (Rs)</label>
+          <input type="number" id="promoMinOrder" value="0" step="1">
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;margin-top:16px;">
+          Activate Promo Code
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="admin-toast-container" id="adminToastContainer"></div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE DARK - Secure Access</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body class="auth-page-dark">
+    
+    <header class="auth-minimal-header">
+        <a href="index.html" class="auth-brand-logo">THE DARK</a>
+    </header>
+
+    <main class="auth-dual-container">
+        
+        <!-- Left Column: Log In -->
+        <section class="auth-column login-column">
+            <div class="auth-column-inner">
+                <h1 class="auth-heading">RETURNING COLLECTOR</h1>
+                <p class="auth-subtext">Access your archive, view order history, and manage payment methods.</p>
+                
+                <form id="newLoginForm" class="auth-form">
+                    <div class="form-row">
+                        <label for="loginEmail">Email Address</label>
+                        <input type="email" id="loginEmail" placeholder="collector@thedark.com" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" placeholder="••••••••" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-solid" id="loginSubmitBtn">LOG IN</button>
+                        <a href="#" class="forgot-link">Recover Access</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Center Divider -->
+        <div class="auth-divider">
+            <div class="divider-line"></div>
+            <span class="divider-text">OR</span>
+            <div class="divider-line"></div>
+        </div>
+
+        <!-- Right Column: Create Account -->
+        <section class="auth-column register-column">
+            <div class="auth-column-inner">
+                <h1 class="auth-heading">INITIATE ACCESS</h1>
+                <p class="auth-subtext">Join the Inner Archive for early access to limited silhouettes.</p>
+                
+                <form id="newRegisterForm" class="auth-form">
+                    <div class="form-grid-2">
+                        <div class="form-row">
+                            <label for="regFirstName">First Name</label>
+                            <input type="text" id="regFirstName" placeholder="First Name" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="regLastName">Last Name</label>
+                            <input type="text" id="regLastName" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="regEmail">Email Address</label>
+                        <input type="email" id="regEmail" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="regPassword">Password</label>
+                        <input type="password" id="regPassword" placeholder="Minimum 8 characters" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-outline" id="registerSubmitBtn">CREATE ACCOUNT</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="toast-container" id="authToastContainer"></div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Account // THE DARK</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .account-container { max-width: 1000px; margin: 100px auto; padding: 20px; display: grid; grid-template-columns: 250px 1fr; gap: 40px; color: #fff; }
+    .account-sidebar { border-right: 1px solid #333; padding-right: 20px; }
+    .account-nav-btn { display: block; width: 100%; text-align: left; background: none; border: none; color: var(--text-muted); font-size: 14px; padding: 12px 0; cursor: pointer; border-bottom: 1px solid #222; font-family: var(--font-mono); text-transform: uppercase; }
+    .account-nav-btn.active { color: #fff; border-bottom-color: var(--accent-cyan); }
+    .account-panel { display: none; }
+    .account-panel.active { display: block; }
+    .account-title { font-family: var(--font-display); font-size: 28px; margin-bottom: 24px; text-transform: uppercase; }
+    
+    .info-group { margin-bottom: 20px; }
+    .info-label { font-size: 10px; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase; display: block; margin-bottom: 4px; }
+    .info-value { font-size: 16px; }
+
+    .history-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    .history-table th, .history-table td { text-align: left; padding: 12px; border-bottom: 1px solid #222; font-size: 13px; }
+    .history-table th { font-family: var(--font-mono); font-size: 10px; color: var(--text-muted); text-transform: uppercase; }
+
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-size: 11px; font-family: var(--font-mono); color: var(--text-muted); margin-bottom: 6px; }
+    .form-group input { width: 100%; background: #0b0b0e; border: 1px solid #333; color: #fff; padding: 12px; font-family: var(--font-sans); }
+    
+    .card-item { background: #111; border: 1px solid #333; padding: 16px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; }
+  </style>
+</head>
+<body class="dark-theme">
+  <!-- NAV -->
+  <nav class="atelier-nav">
+    <div class="nav-brand"><a href="index.html" style="color:#fff;text-decoration:none;">THE DARK</a></div>
+  </nav>
+
+  <div class="account-container">
+    <div class="account-sidebar">
+      <button class="account-nav-btn active" onclick="switchAccountTab('details', event)">My Details</button>
+      <button class="account-nav-btn" onclick="switchAccountTab('history', event)">Order History</button>
+      <button class="account-nav-btn" onclick="switchAccountTab('wallet', event)">Payment Methods</button>
+      <button class="account-nav-btn" onclick="switchAccountTab('security', event)">Security</button>
+      <button class="account-nav-btn" style="color:var(--accent-red); margin-top:40px;" onclick="logout()">Sign Out</button>
+    </div>
+
+    <div class="account-content">
+      <!-- DETAILS -->
+      <div id="panel-details" class="account-panel active">
+        <h2 class="account-title">My Profile</h2>
+        <div class="info-group"><span class="info-label">Name</span><div class="info-value" id="profileName">--</div></div>
+        <div class="info-group"><span class="info-label">Email</span><div class="info-value" id="profileEmail">--</div></div>
+        <div class="info-group"><span class="info-label">Status</span><div class="info-value" id="profileStatus">--</div></div>
+      </div>
+
+      <!-- HISTORY -->
+      <div id="panel-history" class="account-panel">
+        <h2 class="account-title">Order History</h2>
+        <table class="history-table">
+          <thead><tr><th>Order #</th><th>Date</th><th>Status</th><th>Total</th></tr></thead>
+          <tbody id="historyBody"></tbody>
+        </table>
+      </div>
+
+      <!-- WALLET -->
+      <div id="panel-wallet" class="account-panel">
+        <h2 class="account-title">Payment Methods</h2>
+        <div id="cardsList"></div>
+        <div style="margin-top: 30px; border-top: 1px solid #333; padding-top: 20px;">
+          <h3 style="font-size: 14px; margin-bottom: 16px;">Add New Card</h3>
+          <div class="form-group"><label>Cardholder Name</label><input type="text" id="cardName"></div>
+          <div style="display:flex; gap:16px;">
+            <div class="form-group" style="flex:1;"><label>Card Number (Last 4)</label><input type="text" id="cardLast4" maxlength="4" placeholder="1234"></div>
+            <div class="form-group" style="flex:1;"><label>Expiry (MM/YY)</label><input type="text" id="cardExpiry" placeholder="12/28"></div>
+          </div>
+          <button class="btn btn-primary" style="width:100%; padding:14px;" onclick="addCard()">Save Card</button>
+        </div>
+      </div>
+
+      <!-- SECURITY -->
+      <div id="panel-security" class="account-panel">
+        <h2 class="account-title">Change Password</h2>
+        <div class="form-group"><label>Current Password</label><input type="password" id="oldPass"></div>
+        <div class="form-group"><label>New Password</label><input type="password" id="newPass"></div>
+        <button class="btn btn-primary" style="width:100%; padding:14px; margin-top:10px;" onclick="changePassword()">Update Password</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toastContainer" class="toast-container"></div>
+
+  <script src="account.js"></script>
+</body>
+</html>
